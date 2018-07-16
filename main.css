@@ -1,8 +1,13 @@
 body {
   text-align: center;
   background-color: #333;
+  font-family: 'Dosis', sans-serif;
+  color: #EEE;
 }
 
+h1 {
+  margin: 10px;
+}
 
 #container {
   margin: 0 auto;
@@ -11,3 +16,18 @@ body {
   border: solid black 1px;
   background-color: #FFF;
 }
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #EEE;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Dosis', sans-sans-serif;
+}
+
+button:hover {
+  background-color: #CCC;
+}
+
+button:focus {outline:0;}
