@@ -2,6 +2,7 @@ function generateGrid(resolution) {
   let container = document.getElementById('container')
   for(let x=0;x<resolution;x++){
     let row = document.createElement('div');
+    row.setAttribute("style", `width:640; height: ${640/resolution}px`);
     row.classList.add('row');
     for(let y=0;y<resolution;y++){
       row.appendChild(createpixel(resolution));
@@ -15,9 +16,10 @@ function createpixel(resolution){
   let width = height = 640/resolution;
   let pixel = document.createElement('div');
   pixel.classList.add('pixel');
-  pixel.setAttribute("style", `width:${width}; height: ${height}; display: inline-block; background-color: #000; opacity:0`);
+  pixel.setAttribute("style", `width:${width}px; height: ${height}px;  opacity:0;`);
   pixel.addEventListener('mouseover', function(e) {
     e.target.style.opacity = parseFloat(e.target.style.opacity)+0.1;
+    console.log(e.target.style.opacity);
   })
   return pixel;
 }

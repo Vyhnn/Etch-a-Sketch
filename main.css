@@ -1,8 +1,11 @@
-body {
+
+html, body {
   text-align: center;
   background-color: #333;
   font-family: 'Dosis', sans-serif;
   color: #EEE;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -15,6 +18,11 @@ h1 {
   height: 640px;
   border: solid black 1px;
   background-color: #FFF;
+}
+
+.pixels {
+  display: inline-block;
+  background-color: #000;
 }
 
 button {
